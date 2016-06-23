@@ -8,7 +8,7 @@ $checkout_page_wl = CheckoutPageWL.new
 $myprofile_page_wl = MyProfilePageWL.new
 
 
-#Login in My account 
+#Login in My account all
 
 Given(/^I want to login in my account cp$/) do
   visit url_visit
