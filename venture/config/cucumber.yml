@@ -1,0 +1,36 @@
+# config/cucumber.yml
+## YAML Template
+
+################################################################################################################
+#	VARIABLES																						     	   #
+################################################################################################################
+usr: roberto.sanchez999@linio.com
+pas: test1234
+cod_cupon: 5test
+
+
+item: Linio.QA
+#item: Bloc De Dibujo Art Essentials -Melissa & Doug
+####--- selenium / phantom /chromedriver
+driver: selenium
+
+################################################################################################################
+#ENVIRONMENT		
+# LIVE EXAMPLE: LMX																	   
+################################################################################################################
+LMX: --tag @mx COUNTRY=LMX -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-mx.html
+LCO: --tag @co COUNTRY=LCO -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-co.html 
+LVE: --tag @ve COUNTRY=LVE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-ve.html 
+LCL: --tag @cl COUNTRY=LCL -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-cl.html 
+LPE: --tag @pe COUNTRY=LPE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-pe.html 
+LEC: --tag @ec COUNTRY=LEC -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-ec.html 
+LPA: --tag @pa COUNTRY=LPA -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-pa.html 
+HPMX: --tag @hpmx COUNTRY=HPMX -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-HPMX.html 
+HPCL: --tag @hpcl COUNTRY=HPCL -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-HPCL.html 
+WLCP: --tag @wlcp COUNTRY=WLCP -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-WLCP.html 
+AVCO: --tag @avco COUNTRY=AVCO -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-AVCO.html 
+AVPE: --tag @avpe COUNTRY=AVPE -f pretty -f html --out reports/<%= Time.now.strftime("%Y%m%d-%H%M%S")%>-AVPE.html 
+################################################################################################################
+#ENVIRONMENT		
+# STAGING's EXAMPLE: A01-MX																   
+################################################################################################################

@@ -1,0 +1,20 @@
+Feature: Login WL
+As an user I want to login in WL HP
+
+@hpmx @hpcl
+Scenario: Login My account
+	Given I want to login in HP
+	Then I go to home HP
+	And I go to login hp
+	And I go to my account hp 
+	And I click in the button "login"
+	Then I should back to home page 
+
+@hpmx @hpcl
+Scenario: Login Checkout
+	Given I want to login in checkout hp
+  	When I do a search of a product hp
+  	And I select the item hp
+  	And I go to the cart hp
+  	And I do Login in the checkout hp
+  	Then I should see the apartad payment methods hp
